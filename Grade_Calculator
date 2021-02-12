@@ -1,0 +1,16 @@
+firstname = input("Enter your first name: ")
+surname = input("Enter your surname: ")
+course = input("Enter the course: ")
+prelim = input("Enter prelim grade: ")
+midterm = input("Enter midterm grade: ")
+finals = input("Enter finals grade: ")
+
+semestral = ((int(prelim) + int(midterm) + int(finals)) / 3);
+print("Hello Klasmeyt! {}, your semestral grade is: {:.2f} ".format(firstname, semestral))
+
+if semestral > 70.00:
+    print("\U0001F600")
+elif semestral == 70.00:
+    print("\U0001F606")
+elif semestral < 70.00:
+    print("\U0001F62D")
